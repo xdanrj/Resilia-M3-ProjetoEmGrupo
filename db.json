@@ -1,0 +1,111 @@
+{
+    "filmes": [
+        {
+            "titulo": "De Volta para o Futuro",
+            "ano": 1985,
+            "diretor": "Robert Zemeckis",
+            "id": 1
+        },
+        {
+            "titulo": "De Volta para o Futuro 2",
+            "ano": 1989,
+            "diretor": "Robert Zemeckis",
+            "id": 2
+        },
+        {
+            "titulo": "De Volta para o Futuro 3",
+            "ano": 1990,
+            "diretor": "Robert Zemeckis",
+            "id": 3
+        },
+        {
+            "titulo": "Projeto Almanaque",
+            "ano": 2015,
+            "diretor": "Dean Israelite",
+            "id": 4
+        },
+        {
+            "titulo": "Efeito Borboleta",
+            "ano": 2004,
+            "diretor": "Eric Bress",
+            "id": 5
+        },
+        {
+            "titulo": "Lucy",
+            "ano": 2014,
+            "diretor": "Luc Benson",
+            "id": 6
+        },
+        {
+            "titulo": "Interestelar",
+            "ano": 2014,
+            "diretor": "Christopher Nolan",
+            "id": 7
+        },
+        {
+            "titulo": "No limite do amanhã",
+            "ano": 2014,
+            "diretor": "Doug Liman",
+            "id": 8
+        },
+        {
+            "titulo": "Questão de Tempo",
+            "ano": 2013,
+            "diretor": "Richard Curtis",
+            "id": 9
+        },
+        {
+            "titulo": "Vingadores: Ultimato",
+            "ano": 2019,
+            "diretor": "Anthony Russo",
+            "id": 10
+        }
+    ],
+    "cinemas": [
+        {
+        "nome": "Cinema 1: Unidade do RJ",
+        "local": "Rio de Janeiro",
+        "id": 1
+        },
+        {
+        "nome": "Cinema 2: Unidade de SP",
+        "local": "São Paulo",
+        "id": 2
+        },
+        {
+        "nome": "Cinema 3: Unidade de BH",
+        "local": "Belo Horizonte",
+        "id": 3
+        },
+        {
+        "nome": "Cinema 4: Unidade do DF",
+        "local": "Brasília",
+        "id": 4
+        }
+    ],
+    "ingressos": [
+        {
+        "tipo": "meia-entrada",
+        "preco": 22.50
+        },
+        {
+        "tipo": "inteira",
+        "preco": 39.9
+        },
+        {
+        "tipo": "pix",
+        "preco": 26.9
+        },
+        {
+        "tipo": "credito",
+        "preco": 44.9
+        }
+    ],
+    "carrinho": [
+        {
+        "filme": "",
+        "quantidade": 0,
+        "valorTotal": 0
+        }
+    ]
+}

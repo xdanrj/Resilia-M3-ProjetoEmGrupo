@@ -1,0 +1,11 @@
+.tarefa {
+  width: max-content;
+  height: 40px;
+  padding: 0 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1pt solid #111111;
+}
