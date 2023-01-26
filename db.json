@@ -1,111 +1,121 @@
 {
-    "filmes": [
-        {
-            "titulo": "De Volta para o Futuro",
-            "ano": 1985,
-            "diretor": "Robert Zemeckis",
-            "id": 1
-        },
-        {
-            "titulo": "De Volta para o Futuro 2",
-            "ano": 1989,
-            "diretor": "Robert Zemeckis",
-            "id": 2
-        },
-        {
-            "titulo": "De Volta para o Futuro 3",
-            "ano": 1990,
-            "diretor": "Robert Zemeckis",
-            "id": 3
-        },
-        {
-            "titulo": "Projeto Almanaque",
-            "ano": 2015,
-            "diretor": "Dean Israelite",
-            "id": 4
-        },
-        {
-            "titulo": "Efeito Borboleta",
-            "ano": 2004,
-            "diretor": "Eric Bress",
-            "id": 5
-        },
-        {
-            "titulo": "Lucy",
-            "ano": 2014,
-            "diretor": "Luc Benson",
-            "id": 6
-        },
-        {
-            "titulo": "Interestelar",
-            "ano": 2014,
-            "diretor": "Christopher Nolan",
-            "id": 7
-        },
-        {
-            "titulo": "No limite do amanhã",
-            "ano": 2014,
-            "diretor": "Doug Liman",
-            "id": 8
-        },
-        {
-            "titulo": "Questão de Tempo",
-            "ano": 2013,
-            "diretor": "Richard Curtis",
-            "id": 9
-        },
-        {
-            "titulo": "Vingadores: Ultimato",
-            "ano": 2019,
-            "diretor": "Anthony Russo",
-            "id": 10
-        }
-    ],
-    "cinemas": [
-        {
-        "nome": "Cinema 1: Unidade do RJ",
-        "local": "Rio de Janeiro",
-        "id": 1
-        },
-        {
-        "nome": "Cinema 2: Unidade de SP",
-        "local": "São Paulo",
-        "id": 2
-        },
-        {
-        "nome": "Cinema 3: Unidade de BH",
-        "local": "Belo Horizonte",
-        "id": 3
-        },
-        {
-        "nome": "Cinema 4: Unidade do DF",
-        "local": "Brasília",
-        "id": 4
-        }
-    ],
-    "ingressos": [
-        {
-        "tipo": "meia-entrada",
-        "preco": 22.50
-        },
-        {
-        "tipo": "inteira",
-        "preco": 39.9
-        },
-        {
-        "tipo": "pix",
-        "preco": 26.9
-        },
-        {
-        "tipo": "credito",
-        "preco": 44.9
-        }
-    ],
-    "carrinho": [
-        {
-        "filme": "",
-        "quantidade": 0,
-        "valorTotal": 0
-        }
-    ]
+  "filmes": [
+    {
+      "titulo": "De Volta para o Futuro",
+      "ano": 1985,
+      "diretor": "Robert Zemeckis",
+      "img": "https://upload.wikimedia.org/wikipedia/pt/9/97/BackFuturePoster.jpg",
+      "id": 1
+    },
+    {
+      "titulo": "De Volta para o Futuro 2",
+      "ano": 1989,
+      "diretor": "Robert Zemeckis",
+      "img": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/91c931a226e0b4054181d8b8bfd30670_7680d8c9-e5fb-4898-8739-169c782fb64c_480x.progressive.jpg?v=1573652659",
+      "id": 2
+    },
+    {
+      "titulo": "De Volta para o Futuro 3",
+      "ano": 1990,
+      "diretor": "Robert Zemeckis",
+      "img": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/c60cc0bb31c9a532de80eb33114fd9dc_852abffc-c758-4964-8b81-e94d1d5bbc04_480x.progressive.jpg?v=1573653682",
+      "id": 3
+    },
+    {
+      "titulo": "Projeto Almanaque",
+      "ano": 2015,
+      "diretor": "Dean Israelite",
+      "img": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/ef42212f8e9b736d0ac947e5d0e06dc3_0b0b9d10-3be0-4cc5-9411-ecb87d2b2870_480x.progressive.jpg?v=1573591420",
+      "id": 4
+    },
+    {
+      "titulo": "Efeito Borboleta",
+      "ano": 2004,
+      "diretor": "Eric Bress",
+      "img": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/c8d6771006e168463c27fe8d6efa7df3_a6fdfd26-c8ff-4bb4-b58f-9a13202e3704_480x.progressive.jpg?v=1573594792",
+      "id": 5
+    },
+    {
+      "titulo": "Lucy",
+      "ano": 2014,
+      "diretor": "Luc Benson",
+      "img": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/19ccdd60a913e77fef93d5e795c2b4e9_2254aa9f-3b8b-408f-80a7-3fa94509dfcc_480x.progressive.jpg?v=1573618778",
+      "id": 6
+    },
+    {
+      "titulo": "Interestelar",
+      "ano": 2014,
+      "diretor": "Christopher Nolan",
+      "img": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/interstellar3_480x.progressive.jpg?v=1585846947",
+      "id": 7
+    },
+    {
+      "titulo": "No limite do amanhã",
+      "ano": 2014,
+      "diretor": "Doug Liman",
+      "img": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/bc7680458607a454d1feea3b516d477a_e36a14ca-02c3-49f9-b579-91dc52a78566_480x.progressive.jpg?v=1573588821",
+      "id": 8
+    },
+    {
+      "titulo": "Questão de Tempo",
+      "ano": 2013,
+      "diretor": "Richard Curtis",
+      "img": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/fd87154a594dd0b9698de3c3bf28afdb_f3f2656d-984f-4145-942c-72ef773923f1_480x.progressive.jpg?v=1573613913",
+      "id": 9
+    },
+    {
+      "titulo": "Vingadores: Ultimato",
+      "ano": 2019,
+      "diretor": "Anthony Russo",
+      "img": "https://cdn.shopify.com/s/files/1/0057/3728/3618/products/108b520c55e3c9760f77a06110d6a73b_e97cf224-d57f-44e3-8477-4f5479cd746b_480x.progressive.jpg?v=1573616089",
+      "id": 10
+    }
+  ],
+  "cinemas": [
+    {
+      "nome": "Cinema 1: Unidade do RJ",
+      "local": "Rio de Janeiro",
+      "id": 1
+    },
+    {
+      "nome": "Cinema 2: Unidade de SP",
+      "local": "São Paulo",
+      "id": 2
+    },
+    {
+      "nome": "Cinema 3: Unidade de BH",
+      "local": "Belo Horizonte",
+      "id": 3
+    },
+    {
+      "nome": "Cinema 4: Unidade do DF",
+      "local": "Brasília",
+      "id": 4
+    }
+  ],
+  "ingressos": [
+    {
+      "tipo": "meia-entrada",
+      "preco": 22.5
+    },
+    {
+      "tipo": "inteira",
+      "preco": 39.9
+    },
+    {
+      "tipo": "pix",
+      "preco": 26.9
+    },
+    {
+      "tipo": "credito",
+      "preco": 44.9
+    }
+  ],
+  "carrinho": [
+    {
+      "filme": "",
+      "quantidade": 0,
+      "valorTotal": 0
+    }
+  ]
 }

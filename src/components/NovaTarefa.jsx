@@ -14,7 +14,7 @@ export function NovaTarefa() {
 
 // POST NORMAL
   function postApi() {
-    axios.post(`https://example-deploy-a-json-server.onrender.com/notas`, {
+    axios.post(`http://localhost:3000/filmes`, {
       titulo: titulo,
       ano: ano,
       diretor: diretor
@@ -30,7 +30,7 @@ export function NovaTarefa() {
 
 // DELETE NORMAL
   function deleteApiId() {
-    axios.delete(`https://example-deploy-a-json-server.onrender.com/notas/${inputId}`)
+    axios.delete(`http://localhost:3000/filmes/${inputId}`)
       .then((result) => {
         console.log(result);
       })
@@ -41,7 +41,7 @@ export function NovaTarefa() {
 
 // UPDATE NORMAL
   function updateApi(){
-    axios.put(`https://example-deploy-a-json-server.onrender.com/notas/${inputId}`, {
+    axios.put(`http://localhost:3000/filmes/${inputId}`, {
       titulo: titulo,
       ano: ano,
       diretor: diretor,
@@ -58,7 +58,7 @@ export function NovaTarefa() {
    // POST EM LOOP (ASYNC)
    let postApiLoop = async() =>{ 
     for(var indice= 0; indice < 10; indice++){
-    axios.post("https://example-deploy-a-json-server.onrender.com/notas", {
+    axios.post("http://localhost:3000/filmes", {
       titulo: "youtube.com/XDanRJ",
       testando: "aa"
     })
@@ -73,7 +73,7 @@ export function NovaTarefa() {
   // DELETE EM LOOP (ASYNC)
   let deleteApiLoop = async() =>{
     for(var indice= 0; indice < 10; indice++){
-      axios.delete(`https://example-deploy-a-json-server.onrender.com/notas/${indice}`)
+      axios.delete(`http://localhost:3000/filmes/${indice}`)
       .then((result) => {
         console.log(result);
       })
@@ -101,3 +101,4 @@ export function NovaTarefa() {
     </div>
   );
 }
+

@@ -5,8 +5,9 @@ import './index.css'
 
 import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
 
-import Home from "./routes/Home";
-import Cartaz from "./routes/Cartaz";
+import Home from "./routes/home";
+import Cartaz from "./routes/cartaz";
+import Editar from "./routes/editar";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "cartaz",
         element: <Cartaz />
+      },
+      {
+        path: "editar",
+        element: <Editar />
       }
     ]
   }

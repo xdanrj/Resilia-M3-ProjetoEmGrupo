@@ -11,6 +11,10 @@ function Navbar(){
             <li className={styles.item}>
                 <Link to="/cartaz">Cartaz</Link>
             </li>
+
+            <li className={styles.item}>
+                <Link to="/editar">Editar</Link>
+            </li>
         </ul>
     )
 }

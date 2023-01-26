@@ -4,14 +4,13 @@ import { useState } from "react";
 
 import { NovaTarefa } from "../components/NovaTarefa";
 
-const Home = () => {
+const Editar = () => {
     return(
         <div>
-            <h3>HOME</h3>
-            <h3>asekoasek</h3>
-            
+            <h3>EDICAO JSON</h3>
+            <NovaTarefa />
         </div>
     )
 }
 
-export default Home;
+export default Editar;
