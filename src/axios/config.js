@@ -4,7 +4,7 @@
 import axios from "axios";
 
 const blogFetch = axios.create({
-    baseURL: "http://localhost:3000",
+    baseURL: "https://resilia-m3-projetoindividual.onrender.com/"
 });
 
 export default blogFetch;

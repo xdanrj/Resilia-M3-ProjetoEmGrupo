@@ -4,7 +4,8 @@ import axios from "axios";
 import { useState } from "react";
 import { NovaTarefa } from "../components/NovaTarefa";
 
-import ListarFilmes from '../components/ListarFilmes'
+import ListarFilmes from '../components/ListarFilmes';
+
 
 const Cartaz = () => {
     return(
