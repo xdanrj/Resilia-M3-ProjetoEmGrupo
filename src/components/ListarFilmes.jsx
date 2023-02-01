@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import blogFetch from "../axios/config";
-import "../ListarFilmes.css";
+import "./ListarFilmes.css";
 //import AdicionarCarrinho from "./Carrinho"; 
 
 const ListarFilmes = () => {
@@ -65,32 +65,26 @@ const ListarFilmes = () => {
     return (
         
         <div>
-            <div className="catalogo">
+            <div className="catalogo-container">
             {posts.length === 0 ? (<p>Carregando...</p>) : (
                posts.map((post) => (
-                    <div className="post" key={post.id}>
+                    <div className="catalogo-item" key={post.id}>
+                        <div className="tituloDiv">
                         <h2>{post.titulo}</h2>
+                        </div>
+                        
                         <img src={post.img} className="poster" alt="" />
                         <h3>{post.diretor} | {post.ano}</h3>
-                    
+
+                        <Link to={{ pathname: `/editar/${post.id}` }}>
+                        <button>Editar</button>
+                        </Link>
                     </div>
                 ))
             )}
             </div>
 
-            <div className="carrinho">
-              
-                <ul>
-                    {carrinho.map((item) => (
-                    <li>
-                        <p>Filme: {item.titulo}</p>
-                        <p>Diretor:{item.diretor}</p>
-                        <p>Ano:{item.ano}</p>
-                    </li>
-                    ))}
-                    </ul>
-                
-        </div>
+           
         </div>
     )
 };

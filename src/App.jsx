@@ -5,8 +5,7 @@ import "./App.css";
 import { Outlet } from "react-router-dom";
 
 import  Navbar  from './components/layout/Navbar'
-import { NovaTarefa } from "./components/NovaTarefa";
-import { Tarefas } from "./components/Tarefas";
+import { EditarPost } from "./components/EditarPost";
 
 function App() {
 
@@ -25,6 +24,6 @@ export default App;
 
 /* RASCUNHO (estava nesse return /\)
 <Tarefas />
-<NovaTarefa />
+<EditarPost />
 
 */

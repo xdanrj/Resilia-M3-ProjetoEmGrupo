@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 
-import { NovaTarefa } from "../components/NovaTarefa";
+import { EditarPost } from "../components/EditarPost";
 
 const Home = () => {
     return(

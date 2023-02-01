@@ -1,0 +1,21 @@
+.catalogo-container{
+    margin-top: 70%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 25rem 25rem 25rem
+    
+}
+
+.catalogo-item{
+  margin-left: 10%
+}
+
+.poster{
+    width: 60%;
+    height: 14rem;
+}
+
+.tituloDiv{
+    margin-bottom: 30%;
+}
+

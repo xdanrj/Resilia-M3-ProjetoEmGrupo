@@ -3,14 +3,17 @@ import axios from "axios";
 import { useState } from "react";
 
 import { EditarPost } from "../components/EditarPost";
+import { PaginaLogin } from "../components/PaginaLogin";
 
-const Editar = () => {
+const Login = () => {
     return(
         <div>
-            <h3>EDICAO JSON</h3>
-            <EditarPost />
+            <h3>LOGIN</h3>
+            <PaginaLogin />
+            
+            
         </div>
     )
 }
 
-export default Editar;
+export default Login;

@@ -8,6 +8,8 @@ import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
 import Home from "./routes/home";
 import Cartaz from "./routes/cartaz";
 import Editar from "./routes/editar";
+import Adicionar from "./routes/adicionar";
+import Login from "./routes/login"
 
 const router = createBrowserRouter([
   {
@@ -23,8 +25,16 @@ const router = createBrowserRouter([
         element: <Cartaz />
       },
       {
-        path: "editar",
+        path: "editar/:id",
         element: <Editar />
+      },
+      {
+        path: "adicionar",
+        element: <Adicionar />
+      },
+      {
+      path: "login",
+        element: <Login />
       }
     ]
   }
