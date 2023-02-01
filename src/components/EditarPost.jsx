@@ -5,19 +5,20 @@ import { useState } from "react";
 import { useEffect } from "react";
 import ListarFilmes from "./ListarFilmes";
 import blogFetch from "../axios/config";
-import { useParams } from 'react-router-dom'
-import { useForm } from 'react-hook-form'
+import { useParams } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
+import styles from "./EditarPost.module.css";
 
 export function EditarPost() {
   const { id } = useParams();
   
   const addPost = data => axios.put(`https://resilia-m3-projetoindividual.onrender.com/filmes/${id}`, data)
   .then(() => {
-      console.log("Deu tudo certo")
+      console.log("SUCESSO: filme editado")
       
   })
   .catch(() => {
-      console.log("DEU ERRADO")
+      console.log("FRACASSO: edicao de filme fracassada")
   })
 
   const { register, handleSubmit, formState: { errors }, reset } = useForm()
@@ -31,53 +32,48 @@ export function EditarPost() {
   }, [])
 
   function ApagarFilme(id) {
-
-        axios.delete(`https://resilia-m3-projetoindividual.onrender.com/filmes/${id}`)
-
-
+        axios.delete(`https://resilia-m3-projetoindividual.onrender.com/filmes/${id}`);
+        console.log("SUCESSO: filme deletado com sucesso")
   }
 
 
   return(
     <div>
-        
-            <div className="cartao-post" >
+        <main>
+        <div className={styles.form} >
+        <div className={styles.title}>Editar filme</div>
+                <div className={styles.subtitle}>Edite as informações do filme</div>
 
-                <h1>EDITAR JSON</h1>
-                <div className="linha-post" ></div>
+                    <form onSubmit={handleSubmit(addPost)} className={styles.formulario} >
 
-                <div className="cartao-post-corpo" >
-
-                    <form onSubmit={handleSubmit(addPost)} className="formulario" >
-
-                        <div className="campo" >
+                        <div className="input-container ic1"  >
                             <label>Título</label>
-                            <input type="text" name="titulo" {...register("titulo")} />
+                            <input type="text" name="titulo" className="inputCss" {...register("titulo")} />
                         </div>
 
-                        <div className="campo" >
+                        <div className="input-container ic2"  >
                             <label>Ano</label>
-                            <input type="text" name="ano" {...register("ano")} />
+                            <input type="text" name="ano" className="inputCss" {...register("ano")} />
                         </div>
 
-                        <div className="campo" >
+                        <div className="input-container ic2"  >
                             <label>Diretor</label>
-                            <input type="text" name="diretor" {...register("diretor")} />
+                            <input type="text" name="diretor" className="inputCss" {...register("diretor")} />
                         </div>
 
-                        <div className="campo" >
+                        <div className="input-container ic2"  >
                             <label>Imagem</label>
-                            <input type="text" name="img" {...register("img")} />
+                            <input type="text" name="img" className="inputCss" {...register("img")} />
                         </div>
-
-                        <button type="submit" >Editar Filme</button>
-                        
                     
                     </form>
+
+                    <div className={styles.botoes}>
+                    <button type="submit" className={styles.botaoEditar}>Editar Filme</button>
                     <button onClick={() => ApagarFilme(id)}>Apagar Filme</button>
-                </div>
+                    </div>
             </div>
-        
+        </main>
     </div>
   )
 }

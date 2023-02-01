@@ -1,7 +1,8 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css';
+import "./components/EditarPost.module.css";
 
 import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
 
@@ -31,10 +32,6 @@ const router = createBrowserRouter([
       {
         path: "adicionar",
         element: <Adicionar />
-      },
-      {
-      path: "login",
-        element: <Login />
       }
     ]
   }

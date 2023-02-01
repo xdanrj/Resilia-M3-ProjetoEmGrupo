@@ -13,11 +13,11 @@ export function AdicionarFilme() {
 
     const addPost = data => axios.post("https://resilia-m3-projetoindividual.onrender.com/filmes/", data)
     .then(() => {
-        console.log("POSTado COM SUCESSO")
+        console.log("FILME ADICIONADO COM SUCESSO")
         
     })
     .catch(() => {
-        console.log("POST FRACASSADO")
+        console.log("ADICAO DE FILME FRACASSADA")
     })
 
 
@@ -31,37 +31,36 @@ return(
                     <form onSubmit={handleSubmit(addPost)} >
 
                         <div className="input-container ic1" >
-                            <input type="text" name="titulo" className="inputCss" {...register("titulo")} />
                             <label for="titulo" className="placeholder">Título</label>
+                            <input type="text" name="titulo" className="inputCss" {...register("titulo")} />
+                            
                             
                         </div>
 
                         <div className="input-container ic2" >
-                        <input type="text" name="ano" className="inputCss" {...register("ano")} />
                             <label for="ano" className="placeholder">Ano</label>
+                            <input type="text" name="ano" className="inputCss" {...register("ano")} />  
                             
                         </div>
 
                         <div className="input-container ic2" >
-                        
-                        <input type="text" name="diretor" className="inputCss" {...register("diretor")} />
                             <label for="diretor" className="placeholder">Diretor</label>
+                            <input type="text" name="diretor" className="inputCss" {...register("diretor")} />
+                            
                             
                         </div>
 
                         <div className="input-container ic2" >
+                            <label for="imagem" className="placeholder">Image</label>
+                            <input type="text" name="img" className="inputCss" {...register("img")} />
                             
                         
-                        <input type="text" name="img" className="inputCss" {...register("img")} />
-                        <label for="imagem" className="placeholder">Image</label>
-                        
                         </div>
-
-                        <button type="submit" >Adicionar Filme</button>
-                        
+                            <div className="botao">
+                            <button type="submit" >Adicionar Filme</button>
+                        </div>
                     </form>
                     
-                
             </div>
         </main>
     </div>

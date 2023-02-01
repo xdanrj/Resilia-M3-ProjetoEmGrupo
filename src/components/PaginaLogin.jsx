@@ -13,9 +13,7 @@ export function PaginaLogin() {
         <div className="wrap-login">
           <form className="login-form">
             <span className="login-form-title"> Bem vindo </span>
-
             
-
             <div className="wrap-input">
               <input
                 className={email !== "" ? "has-val input" : "input"}
@@ -48,4 +46,3 @@ export function PaginaLogin() {
     </div>
   );
 }
-

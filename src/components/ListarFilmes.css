@@ -1,21 +1,28 @@
 .catalogo-container{
-    margin-top: 70%;
+    margin-top: 10%;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: 25rem 25rem 25rem
+    grid-template-columns: 20rem 20rem 20rem 20rem;
+    grid-template-rows: 28rem 28rem 28rem;
     
 }
 
 .catalogo-item{
-  margin-left: 10%
+  margin-left: 10%;
+  margin-bottom: 10%;
+  border-radius: 20px;
+  background-color: #15172b;
 }
 
 .poster{
     width: 60%;
-    height: 14rem;
+    height: 17rem;
 }
 
 .tituloDiv{
-    margin-bottom: 30%;
+  margin-bottom: 3%;
+  margin-top: 5%;
 }
-
+.botaoEditar{
+    margin-top: 5%;
+    margin-right: 5%;
+}

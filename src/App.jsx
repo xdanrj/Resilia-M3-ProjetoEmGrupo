@@ -1,10 +1,10 @@
 import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom'
 import { useState } from "react";
 import "./App.css";
-
+import Navbar from "./components/layout/Navbar"
 import { Outlet } from "react-router-dom";
 
-import  Navbar  from './components/layout/Navbar'
+
 import { EditarPost } from "./components/EditarPost";
 
 function App() {

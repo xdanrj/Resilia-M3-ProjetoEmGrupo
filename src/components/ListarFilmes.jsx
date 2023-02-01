@@ -4,43 +4,10 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import blogFetch from "../axios/config";
 import "./ListarFilmes.css";
-//import AdicionarCarrinho from "./Carrinho"; 
 
 const ListarFilmes = () => {
     const [posts, setPosts] = useState([]);
     const [carrinho, setCarrinho] = useState([]);
-    
-   
-    function AdicionarCarrinho(id) {
-        const filme = posts.find((filme) => filme.id === id);
-        const jaEstaNoCarrinho = carrinho.find(
-            (item) => item.produto.id === id
-            );
-
-            // SE JA ESTA NO CARRINHO
-            if (jaEstaNoCarrinho) {
-                const novoItem = carrinho.map((item) => {
-                    if (item.produto.id === id)
-                    ({
-                        ...item
-                    });
-                    return item;
-                });
-                setCarrinho(novoItem);
-                return;
-            }
-
-            // SE NAO ESTA NO CARRINHO AINDA
-
-        const carrinhoItem = {
-            titulo: filme.titulo,
-            //quantidade: quantidade + 1
-        }
-        const novoItem = [...carrinho, carrinhoItem];
-        setCarrinho(novoItem);
-        console.log(`ID: ${id}`);
-        console.log(carrinho);
-    }
 
     const getPosts = async() => {
         try{
@@ -61,6 +28,10 @@ const ListarFilmes = () => {
         getPosts()
     }, []);
 
+    function ApagarFilme(id) {
+        axios.delete(`https://resilia-m3-projetoindividual.onrender.com/filmes/${id}`)
+        console.log("SUCESSO: filme deletado com sucesso");
+  }
 
     return (
         
@@ -76,9 +47,12 @@ const ListarFilmes = () => {
                         <img src={post.img} className="poster" alt="" />
                         <h3>{post.diretor} | {post.ano}</h3>
 
+                        <div className="botoes">
                         <Link to={{ pathname: `/editar/${post.id}` }}>
-                        <button>Editar</button>
+                        <button className="botaoEditar">Editar</button>
                         </Link>
+                        <button onClick={() => ApagarFilme(post.id)}>Apagar</button>
+                        </div>
                     </div>
                 ))
             )}
@@ -89,9 +63,4 @@ const ListarFilmes = () => {
     )
 };
 
-
 export default ListarFilmes;
-
-/* RASCUNHO
-<button onClick={() => AdicionarCarrinho(post.id)}>+</button>
-*/
