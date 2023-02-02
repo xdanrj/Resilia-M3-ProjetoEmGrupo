@@ -113,9 +113,6 @@
 .submit:active {
   background-color: #06b;
 }
-.botaoEditar{
-  margin-right: 1rem;
-}
-.botoes{
+.botaoAdicionar{
   margin-top: 2rem;
 }

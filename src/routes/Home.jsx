@@ -2,13 +2,12 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 
-import { EditarPost } from "../components/EditarPost";
+import PaginaHome from "../components/PaginaHome";
 
 const Home = () => {
     return(
         <div>
-            <h3>HOME</h3>
-            
+            <PaginaHome />
             
         </div>
     )

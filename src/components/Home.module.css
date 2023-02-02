@@ -1,0 +1,16 @@
+.inicio {
+    margin-top:9rem;
+    text-align: center;
+}
+
+.inicio h1 {
+    font-size:4rem;
+}
+
+.inicio h2 {
+    font-size:2rem;
+}
+
+.inicio img {
+    width:100%;
+}

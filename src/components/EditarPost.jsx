@@ -8,6 +8,7 @@ import blogFetch from "../axios/config";
 import { useParams } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import styles from "./EditarPost.module.css";
+import classnames from "classnames";
 
 export function EditarPost() {
   const { id } = useParams();
@@ -46,24 +47,24 @@ export function EditarPost() {
 
                     <form onSubmit={handleSubmit(addPost)} className={styles.formulario} >
 
-                        <div className="input-container ic1"  >
+                        <div className={classnames(styles.inputContainer, styles.ic1)}  >
                             <label>Título</label>
-                            <input type="text" name="titulo" className="inputCss" {...register("titulo")} />
+                            <input type="text" name="titulo" className={styles.inputCss} {...register("titulo")} />
                         </div>
 
-                        <div className="input-container ic2"  >
+                        <div className={classnames(styles.inputContainer, styles.ic2)}  >
                             <label>Ano</label>
-                            <input type="text" name="ano" className="inputCss" {...register("ano")} />
+                            <input type="text" name="ano" className={styles.inputCss} {...register("ano")} />
                         </div>
 
-                        <div className="input-container ic2"  >
+                        <div className={classnames(styles.inputContainer, styles.ic2)}  >
                             <label>Diretor</label>
-                            <input type="text" name="diretor" className="inputCss" {...register("diretor")} />
+                            <input type="text" name="diretor" className={styles.inputCss} {...register("diretor")} />
                         </div>
 
-                        <div className="input-container ic2"  >
+                        <div className={classnames(styles.inputContainer, styles.ic2)}  >
                             <label>Imagem</label>
-                            <input type="text" name="img" className="inputCss" {...register("img")} />
+                            <input type="text" name="img" className={styles.inputCss} {...register("img")} />
                         </div>
                     
                     </form>
