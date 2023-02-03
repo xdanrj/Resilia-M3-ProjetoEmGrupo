@@ -8,3 +8,9 @@ Site de uma empresa de cinema fictícia cujo catálogo é alimentado diretamente
 - **Node**
 - **Json-Server**
 - **JavaScript**
+
+## GitHub dos membros:
+- **[Danilo Carvalho](https://github.com/xdanrj)**
+- **[Emerson Rolemberg](https://github.com/EmersonRolemberg)**
+- **[Maria Helloá de Lima](https://github.com/MariaHelloa)**
+- **[Luiz Fellipe Rocha](https://github.com/felpferreira)**
