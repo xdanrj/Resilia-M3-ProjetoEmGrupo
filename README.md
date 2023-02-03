@@ -3,13 +3,7 @@ Site de uma empresa de cinema fictícia cujo catálogo é alimentado diretamente
 
 ## [Apresentação no Canvas](https://www.canva.com/design/DAFY3ikW7CM/KChEriwzrt46PXwoh3ENig/view?utm_content=DAFY3ikW7CM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton#1)
 
-## Tecnologias utilizadas:
-- **React + Vite**
-- **Node**
-- **Json-Server**
-- **JavaScript**
-
-## GitHub dos membros:
+# GitHub dos membros:
 - **[Danilo Carvalho](https://github.com/xdanrj)**
 - **[Emerson Rolemberg](https://github.com/EmersonRolemberg)**
 - **[Maria Helloá de Lima](https://github.com/MariaHelloa)**
@@ -17,7 +11,7 @@ Site de uma empresa de cinema fictícia cujo catálogo é alimentado diretamente
 
 # Instruções para executar o projeto:
 
-## Clonar o repositório na sua máquina:
+## Clone o repositório na sua máquina:
 
 ```sh
 $ git clone https://github.com/xdanrj/Resilia-M3-ProjetoEmGrupo.git
@@ -28,7 +22,7 @@ $ git clone https://github.com/xdanrj/Resilia-M3-ProjetoEmGrupo.git
 $ npm install
 $ npm install axios
 ```
-## Executar o projeto:
+## Execute o projeto:
 
 ```sh
 $ npm run dev
