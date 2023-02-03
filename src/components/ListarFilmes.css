@@ -2,7 +2,7 @@
     margin-top: 10%;
     display: grid;
     grid-template-columns: 20rem 20rem 20rem 20rem;
-    grid-template-rows: 28rem 28rem 28rem;
+    grid-template-rows: 32rem 32rem 32rem;
     
 }
 
@@ -26,3 +26,11 @@
     margin-top: 5%;
     margin-right: 5%;
 }
+body{
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  }
+  @keyframes fadeIn {
+      from {opacity: 0}
+      to {opacity: 1}
+  }

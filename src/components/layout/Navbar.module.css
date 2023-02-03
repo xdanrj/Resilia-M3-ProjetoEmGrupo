@@ -56,8 +56,10 @@
 }
 
 .navBar li a:hover{
-    color:#959595;
-   background-color: #959595;
-   padding:1rem;
-   border-radius: 1rem;
+    color:#15172b;
+}
+.imgLogo{
+    width: 45%;
+    margin-top: 2%;
+    margin-left: -600%;
 }

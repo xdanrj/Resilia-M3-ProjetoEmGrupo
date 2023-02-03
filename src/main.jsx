@@ -7,10 +7,10 @@ import "./components/EditarPost.module.css";
 import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom';
 
 import Home from "./routes/home";
-import Cartaz from "./routes/cartaz";
+import Catalogo from "./routes/catalogo";
 import Editar from "./routes/editar";
 import Adicionar from "./routes/adicionar";
-import Login from "./routes/login"
+import Unidades from "./routes/unidades";
 
 const router = createBrowserRouter([
   {
@@ -18,12 +18,12 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: "home",
+        path: "/",
         element: <Home />
       },
       {
-        path: "cartaz",
-        element: <Cartaz />
+        path: "catalogo",
+        element: <Catalogo />
       },
       {
         path: "editar/:id",
@@ -32,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "adicionar",
         element: <Adicionar />
+      },
+      {
+        path: "unidades",
+        element: <Unidades />
       }
     ]
   }

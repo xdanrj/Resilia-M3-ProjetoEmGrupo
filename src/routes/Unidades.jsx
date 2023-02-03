@@ -2,14 +2,14 @@ import React from "react";
 import axios from "axios";
 import { useState } from "react";
 
-import PaginaHome from "../components/PaginaHome";
+import PaginaUnidades from "../components/PaginaUnidades";
 
-const Home = () => {
+const Unidades = () => {
     return(
         <div>
-            <PaginaHome />
+            <PaginaUnidades />
         </div>
     )
 }
 
-export default Home;
+export default Unidades;

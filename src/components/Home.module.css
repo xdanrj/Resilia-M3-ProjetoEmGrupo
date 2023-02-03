@@ -1,5 +1,6 @@
+
 .inicio {
-    margin-top:9rem;
+    margin-top:5rem;
     text-align: center;
 }
 
@@ -9,8 +10,32 @@
 
 .inicio h2 {
     font-size:2rem;
+    margin-bottom: 1%;
 }
 
 .inicio img {
-    width:100%;
+    width:75%;
+    border-radius: 5%;
+}
+.loadingGif{
+    margin-top: 10%;
+    margin-left: 170%;
+    width: 10rem;
+    height: 10rem;
+}
+.hidden {
+    opacity: 0;
+  }
+  .visible {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+  }
+
+body{
+animation-name: fadeIn;
+animation-duration: 2s;
+}
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
 }

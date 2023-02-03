@@ -4,8 +4,11 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import blogFetch from "../axios/config";
 import "./ListarFilmes.css";
+import Loading from "../components/imagens/loading.gif";
+import styles from "./Home.module.css";
 
 const ListarFilmes = () => {
+    
     const [posts, setPosts] = useState([]);
     const [carrinho, setCarrinho] = useState([]);
 
@@ -36,8 +39,10 @@ const ListarFilmes = () => {
     return (
         
         <div>
+            
+
             <div className="catalogo-container">
-            {posts.length === 0 ? (<p>Carregando...</p>) : (
+            {posts.length === 0 ? (<img src={Loading} alt="" className={styles.loadingGif} />) : (
                posts.map((post) => (
                     <div className="catalogo-item" key={post.id}>
                         <div className="tituloDiv">

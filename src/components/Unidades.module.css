@@ -1,0 +1,38 @@
+.unidadesContainer{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 30rem 30rem;
+    grid-template-rows: 32rem 32rem 32rem;   
+}
+.caixaUF{
+  margin-left: 10%;
+  margin-bottom: 10%;
+  border-radius: 20px;
+  background-color: #15172b;
+}
+.inicio{
+    margin-top: 10%;
+}
+.inicio h1 {
+    font-size:2rem; 
+}
+.inicio p {
+    font-size: 16px;
+    margin-bottom: 1.5em;
+    line-height: 1.4em;
+    color: white;
+}
+.inicio iframe {
+    border-radius: 12px;
+    box-sizing: border-box;
+    width: 90%;
+    height: 75%;
+}
+body{
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    }
+    @keyframes fadeIn {
+        from {opacity: 0}
+        to {opacity: 1}
+    }
