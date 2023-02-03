@@ -6,8 +6,9 @@ Site de uma empresa de cinema fictícia cujo catálogo é alimentado diretamente
 # GitHub dos membros:
 - **[Danilo Carvalho](https://github.com/xdanrj)**
 - **[Emerson Rolemberg](https://github.com/EmersonRolemberg)**
-- **[Maria Helloá de Lima](https://github.com/MariaHelloa)**
 - **[Luiz Fellipe Rocha](https://github.com/felpferreira)**
+- **[Maria Helloá de Lima](https://github.com/MariaHelloa)**
+
 
 # Instruções para executar o projeto:
 
