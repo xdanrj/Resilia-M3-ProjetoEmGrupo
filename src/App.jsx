@@ -3,9 +3,8 @@ import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/layout/Navbar"
 import { Outlet } from "react-router-dom";
-
-
 import { EditarPost } from "./components/EditarPost";
+import Footer from "./components/layout/Footer";
 
 function App() {
 
@@ -14,6 +13,8 @@ function App() {
       <Navbar />
      
       <Outlet />
+
+      <Footer />
     </div>
   );
 }

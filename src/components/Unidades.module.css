@@ -2,13 +2,14 @@
     margin-top: 10%;
     display: grid;
     grid-template-columns: 30rem 30rem;
-    grid-template-rows: 32rem 32rem 32rem;   
+    grid-template-rows: 32rem 32rem;   
 }
 .caixaUF{
   margin-left: 10%;
   margin-bottom: 10%;
   border-radius: 20px;
   background-color: #15172b;
+  color:white;
 }
 .inicio{
     margin-top: 10%;
