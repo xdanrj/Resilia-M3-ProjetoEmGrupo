@@ -1,8 +1,9 @@
 .catalogo-container{
     margin-top: 10%;
     display: grid;
-    grid-template-columns: 20rem 20rem 20rem 20rem;
+    grid-template-columns: 22rem 22rem 22rem 22rem;
     grid-template-rows: 32rem 32rem 32rem;
+    margin-left: -5%;
     
 }
 

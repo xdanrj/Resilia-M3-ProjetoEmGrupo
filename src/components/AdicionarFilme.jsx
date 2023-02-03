@@ -27,8 +27,8 @@ return(
         <main>
             <div className={styles.form} >
 
-                <div class={styles.title}>Adicionar filme</div>
-                <div class={styles.subtitle}>Preencha as informações do filme</div>
+                <div className={styles.title}>Adicionar filme</div>
+                <div className={styles.subtitle}>Preencha as informações do filme</div>
                     <form onSubmit={handleSubmit(addPost)} >
 
                         <div className={classnames(styles.inputContainer, styles.ic1)} >
